@@ -14,6 +14,7 @@
 		AB8FA79F2698C16B00DEB749 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8FA79E2698C16B00DEB749 /* Preview Assets.xcassets */; };
 		AB8FA8B02698CF0E00DEB749 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8FA8AF2698CF0E00DEB749 /* SpotifyiOS.framework */; };
 		AB8FA8B5269CC05500DEB749 /* SpotifyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8FA8B4269CC05500DEB749 /* SpotifyManager.swift */; };
+		ABE8702026A0DF8D001F1E8A /* SpotifyCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE8701F26A0DF8D001F1E8A /* SpotifyCredentials.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		AB8FA8AF2698CF0E00DEB749 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 		AB8FA8B12698D11400DEB749 /* SpotifyApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SpotifyApp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		AB8FA8B4269CC05500DEB749 /* SpotifyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyManager.swift; sourceTree = "<group>"; };
+		ABE8701F26A0DF8D001F1E8A /* SpotifyCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyCredentials.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				AB8FA8B12698D11400DEB749 /* SpotifyApp-Bridging-Header.h */,
 				AB8FA7972698C16800DEB749 /* SpotifyApp.swift */,
+				ABE8701F26A0DF8D001F1E8A /* SpotifyCredentials.swift */,
 				AB8FA8B4269CC05500DEB749 /* SpotifyManager.swift */,
 				AB8FA7992698C16800DEB749 /* ContentView.swift */,
 				AB8FA79B2698C16B00DEB749 /* Assets.xcassets */,
@@ -161,6 +164,7 @@
 				AB376DE6269DE3AE0070F26F /* SpotifyTrackInfo.swift in Sources */,
 				AB8FA8B5269CC05500DEB749 /* SpotifyManager.swift in Sources */,
 				AB8FA79A2698C16800DEB749 /* ContentView.swift in Sources */,
+				ABE8702026A0DF8D001F1E8A /* SpotifyCredentials.swift in Sources */,
 				AB8FA7982698C16800DEB749 /* SpotifyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

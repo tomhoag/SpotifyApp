@@ -16,9 +16,6 @@ class SpotifyManager: NSObject, ObservableObject {
     let trackInfoCharacteristic = CBMutableCharacteristic(type: SpotifyTrackInfo.characteristicUUID, properties: [.notify,  .read, .writeWithoutResponse], value: nil, permissions: [.readable])
     let artCharacteristic = CBMutableCharacteristic(type: SpotifyAlbumArt.characteristicUUID, properties: [.notify,  .read, .writeWithoutResponse], value: nil, permissions: [.readable])
     
-    static let SpotifyClientID = "2c4a5f2650cf4efe8a08c8c435f437ec"
-    static let SpotifyRedirectURL = URL(string: "spotify-peripheral-app://spotify-login-callback")!
-    
     @Published var playerState:SPTAppRemotePlayerState?
     
     private let timerInterval:Double = 0.1
@@ -37,8 +34,8 @@ class SpotifyManager: NSObject, ObservableObject {
     private var artSubscribers = [CBCentral]()
     
     lazy var configuration = SPTConfiguration(
-        clientID: SpotifyManager.SpotifyClientID,
-        redirectURL: SpotifyManager.SpotifyRedirectURL
+        clientID: SpotifyCredentials.SpotifyClientID,
+        redirectURL: SpotifyCredentials.SpotifyRedirectURL
     )
     
     lazy var appRemote: SPTAppRemote = {
