@@ -10,8 +10,7 @@ import UIKit.UIImage
 
 class SpotifyManager: NSObject, ObservableObject {
         
-    static let SpotifyClientID = "2c4a5f2650cf4efe8a08c8c435f437ec"
-    static let SpotifyRedirectURL = URL(string: "spotify-peripheral-app://spotify-login-callback")!
+    
     
     @Published var playerState:SPTAppRemotePlayerState?
     
@@ -27,8 +26,8 @@ class SpotifyManager: NSObject, ObservableObject {
     var accessToken = ""
         
     lazy var configuration = SPTConfiguration(
-        clientID: SpotifyManager.SpotifyClientID,
-        redirectURL: SpotifyManager.SpotifyRedirectURL
+        clientID: SpotifyCredentials.SpotifyClientID,
+        redirectURL: SpotifyCredentials.SpotifyRedirectURL
     )
     
     lazy var appRemote: SPTAppRemote = {
